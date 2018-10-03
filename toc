@@ -1,0 +1,14 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="open-banking-platform" audience="service" href="/docs/services/open-banking-platform/index.html"}
+Open Banking Platform
+
+    {: .navgroup id="learn"}
+    index.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    solution_doc.md
+    [Return and error codes](https://openbanking.atlassian.net/wiki/spaces/DZ/pages/5786479/Payment+Initiation+API+Specification+-+v1.1.0#PaymentInitiationAPISpecification-v1.1.0-Return&amp;ErrorCodes)    
+    {: .navgroup-end}
