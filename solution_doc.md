@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-09-26"
+lastupdated: "2018-10-12"
 
 ---
 
@@ -76,23 +76,6 @@ The Transmitter/Receiver uses the target input format to call the appropriate en
 ##### API Controller
 
 The API controller is generated from the Swagger OpenAPI specification in Node.JS and Express.js and Swagger middleware libraries to enhance compatibility with API Connect.
-
-##### Transformation Layer
-
-The transformation layer (T1…n) of components handles all the explicit transformation from the PSD2 JSON to an intermediary format (ISF), then to the target format (ISO20022). The transformation components are implemented using the Java Spring Framework following microservices and distributed systems design principles.
-
-Currently there are six transformation components in the Payment Functional Pack:
-
-* Downstream
-a. PSD2 to ISF
-b. Router
-c. ISF to PACS008 and PACS028 (ISO20022)
-* Upstream
-a. PACS002 (ISO20022) to ISF
-b. Router
-c. ISF to PSD2 
-
-The intention of the Router is dependent on the target destination. The Router sends the message to the proper component for the next transformation.
 
 ##### Transmit and Receive
 
