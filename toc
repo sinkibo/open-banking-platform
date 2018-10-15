@@ -10,16 +10,14 @@ Open Banking Platform
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [Bank onboarding API](https://documentation-ibmopenbanking-doc.developer.us.apiconnect.ibmcloud.com/node/101)
-    [Merchant onboarding API](https://documentation-ibmopenbanking-doc.developer.us.apiconnect.ibmcloud.com/node/102)
-    [Payment initiation API](https://documentation-ibmopenbanking-doc.developer.us.apiconnect.ibmcloud.com/node/103)
+    api_references.md
     
     {: .topicgroup}
     Messages
         errors.md
         debug.md
         info.md
+        [Codes in Payment Initiation API Spec v1.1.0](https://openbanking.atlassian.net/wiki/spaces/DZ/pages/5786479/Payment+Initiation+API+Specification+-+v1.1.0#PaymentInitiationAPISpecification-v1.1.0-Return&amp;ErrorCodes)
     {: .navgroup-end}
 
-    [Return and error codes](https://openbanking.atlassian.net/wiki/spaces/DZ/pages/5786479/Payment+Initiation+API+Specification+-+v1.1.0#PaymentInitiationAPISpecification-v1.1.0-Return&amp;ErrorCodes)    
     {: .navgroup-end}
