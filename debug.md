@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-14"
+lastupdated: "2018-10-15"
 
 ---
 
@@ -48,7 +48,7 @@ lastupdated: "2018-10-14"
 | IOBP-D-031 | Parsing the http headers | Parsing the http headers to send it as part of the http request to the bank |
 | IOBP-D-032 | PSD2BankMessageHandler.sendMessage(), response received from the bank | Indicates that an http response is received from the bank |
 | IOBP-D-033 | SecureSocketManager.getRestTemplate() is called | SecureSocketManager.getRestTemplate() is called to assemble the http request to be sent to the bank |
-| IOBP-D-034 | SecureSocketsManager.getSSLContext for bank: `<bankId>` | SecureSocketsManager.getSSLContext for bank is created by loading the corresponding keystore given the bankId |
+| IOBP-D-034 | SecureSocketsManager.getSSLContext for bank: `<bankId>` | SecureSocketsManager.getSSLContext for the bank is created by loading the corresponding keystore given the bankId |
 | IOBP-D-035 | SecureSocketsManager.getSSLContext passphrase: `<passphrase>`,keystore: `<keystore>` | Indicates the keystore and the passphrase for the bank is loaded |
 | IOBP-D-036 | Extracting data from bank response in TransmitterUtil.extractResponse | Indicates Extracting data from bank response in TransmitterUtil.extractRespons given the key value to persist metadata in the transactions database |
 | IOBP-D-037 | Logging Message Header values | Indicates that the message headers are logged for debugging purpose |
