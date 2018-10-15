@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-12"
+lastupdated: "2018-10-15"
 
 ---
 
@@ -21,7 +21,7 @@ In this getting started tutorial, you get the list of ASPSPs, set up a single pa
 {: #prereqs}
 The following steps show you how to invoke API methods for the {{site.data.keyword.iobp_short}} service. To use the {{site.data.keyword.iobp_short}} REST API, it is important that you understand the basics of RESTful web services and JSON representations.
 
-You must install cURL before you can use the service.
+You must install cURL before you can use the steps in this tutorial.
 
 ## Step 1: Getting your credentials
 
