@@ -45,7 +45,7 @@ lastupdated: "2018-10-14"
 | IOBP-E-028 | Failed to declare an exchange | Error because - Failed to declare an exchange | Create a support ticket to check the status of the rabbitmq indicating details of the error and error message
 | IOBP-E-029 | Failed to bind a queue | Error because - Failed to bind a queue | Create a support ticket to check the status of the rabbitmq indicating details of the error and error message |
 | IOBP-E-030 | Failed to register a consumer | Error because - Failed to register a consumer | Create a support ticket to check the status of the rabbitmq indicating details of the error and error message |
-| IOBP-E-031 | Failed to publish a message | Error because - Failed to publish a message | Error because - Failed to publish a message | Create a support ticket to check the status of the rabbitmq indicating details of the error and error message |
+| IOBP-E-031 | Failed to publish a message | Error because - Failed to publish a message | Create a support ticket to check the status of the rabbitmq indicating details of the error and error message |
 | IOBP-E-032 | Error in constructing the ignore message | Error in constructing the ignore message | Create a support ticket to check the status of the http request. It is failing at the point of ignore message construction |
 | IOBP-E-033 | The transactionId is required but is null/empty | Error occured during message validation because the transaction Id is null/empty | Retry the request with a valid transaction Id |
 | IOBP-E-034 | The messagetype is null/empty | Error occured during message validation because the messagetype is null/empty | Retry the request with a valid  messagetype |
@@ -89,4 +89,4 @@ lastupdated: "2018-10-14"
 | IOBP-E-000U | ERROR_CODE_INVALID_PAYLOAD_TYPE | Error occured becuase the payload type is invalid | Validate the correctness of payload type and retry the request |
 | IOBP-E-000V | ERROR_CODE_INVALID_MESSAGE_HEADERS | Error occured because the message headers are invalid | Validate the correctness of message headers and retry the request |
 | IOBP-E-0500 | ERROR_CODE_BACKEND_EXCEPTION | Error occured during message processing in the backend and a bankend exception is thrown | Create a support ticket to check the status of the backend with details of the error message, http status code, and the http request information |
-| IOBP-E-0401 | ERROR_CODE_INVALID_AUTHCODE | Error occured because the auth code is invalid | Error occured because the auth code is invalid | Create a support ticket to check the validation of the auth code, with details of the http status, error msg, transactionId, and the http request information |
+| IOBP-E-0401 | ERROR_CODE_INVALID_AUTHCODE | Error occured because the auth code is invalid | Create a support ticket to check the validation of the auth code, with details of the http status, error msg, transactionId, and the http request information |
