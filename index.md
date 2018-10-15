@@ -38,7 +38,7 @@ You must install cURL before you can use the steps in this tutorial.
 
 To use the following examples, replace &lt;client-id&gt; and &lt;client-secret&gt; with the values you acquired in this step.
 
-## Step 2: Get a list of ASPSPs
+## Step 2: Getting a list of ASPSPs
 
 A payment initiation begins with a PSU consenting to a payment being made from an ASPSP. The request is sent to the TPP.
 
@@ -70,7 +70,7 @@ The service returns a response that contains the name, country code, and status 
 ```
 {:codeblock}
 
-## Step 3: Create a payment
+## Step 3: Creating a payment
 
 This operation connects the TPP to the ASPSP that services the customer's payment account and creates a new payments resource. This informs the ASPSP that one of its customers intends to make a payment. The ASPSP responds with an identifier, status, and other data for the resource. 
 
@@ -188,7 +188,7 @@ The following is the response to a successful request:
 ```
 {:codeblock}
 
-## Step 4: Get payment status
+## Step 4: Getting the status of the payment
 
 This operation specifies the PaymentId, returned by creating the payment in Step 3, in the path and returns the payment with that ID.
 
