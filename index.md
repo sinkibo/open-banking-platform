@@ -55,12 +55,6 @@ The service returns a response that contains the name, country code, and status 
 ```
 [
     {
-        "x-fapi-financial-id": "4444",
-        "name": "Bluebee Bank",
-        "sortCode": "xyz",
-        "BICFI": "be2e44b06b34"
-    },
-    {
         "x-fapi-financial-id": "0015800001041REAAY",
         "name": "Forgerock",
         "sortCode": "xyz",
