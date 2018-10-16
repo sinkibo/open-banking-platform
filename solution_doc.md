@@ -60,40 +60,6 @@ For information about the endpoints for Merchant, Bank, Transaction History, and
 The following image shows the Request to Pay sequence.
 ![Request to Pay sequence](request_to_pay_sequence_comp.png)
 
-#### Payment workflows
-
-The current stack is written with three main layers that communicate through message queues. Following a microservices architecture, each component runs as a separate pod. This way, if any pod needs to scale, they can replicate individually instead of replicating the entire Payment Pack.
-
-The following image shows the payment workflows.
-![Payment workflows](payment_workflows.png)
-
-The API Controller (entry point) accepts the incoming transaction request and returns the response.
-
-The transformation components in the Functional Pack execute the JSON and XML transformations to the target format (downstream and upstream¬), in our case ISO20022 (PACS008 & PACS002).
-  
-The Transmitter/Receiver uses the target input format to call the appropriate endpoint of the CMA and returns the response format.
-
-##### API Controller
-
-The API controller is generated from the Swagger OpenAPI specification in Node.JS and Express.js and Swagger middleware libraries to enhance compatibility with API Connect.
-
-##### Transformation Layer
-
-The transformation layer (T1…n) of components handles all the explicit transformation from the PSD2 JSON to an intermediary format (ISF), then to the target format (ISO20022). The transformation components are implemented using the Java Spring Framework following microservices and distributed systems design principles.
-
-Currently there are six transformation components in the Payment Functional Pack:
-
-* Downstream
-a. PSD2 to ISF
-b. Router
-c. ISF to PACS008 and PACS028 (ISO20022)
-* Upstream
-a. PACS002 (ISO20022) to ISF
-b. Router
-c. ISF to PSD2 
-
-The intention of the Router is dependent on the target destination. The Router sends the message to the proper component for the next transformation.
-
 ##### Transmit and Receive
 
 The Transmitter/Receiver (Tx/Rx) takes the target input format and discovers the service destination endpoint of the CMA and calls the destination endpoint. The response is passed to the next component.
