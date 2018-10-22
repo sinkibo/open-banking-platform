@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-16"
+lastupdated: "2018-10-22"
 
 ---
 
@@ -53,30 +53,18 @@ The following image outlines the platform features and functionality in more det
 ### Payment Pack
 #### Payment Pack APIs
 
-The Payment Pack contains the Payment APIs, Transaction History, and the payment workflows. 
+The Payment Pack contains the Payment APIs and the payment workflows. 
 
-For information about the endpoints for Merchant, Bank, Transaction History, and Payments, see the API Reference.
+For information about the endpoints for Merchant, Bank, and Payments, see the API Reference.
 
 The following image shows the Request to Pay sequence.
 ![Request to Pay sequence](request_to_pay_sequence_comp.png)
 
-##### Transmit and Receive
+#### Transmit and Receive
 
 The Transmitter/Receiver (Tx/Rx) takes the target input format and discovers the service destination endpoint of the CMA and calls the destination endpoint. The response is passed to the next component.
 
-## Transaction Repository
-The transaction history is an audit log that records events such as when a payment submission is created or the status of the creation of a payment submission is requested. When a merchant makes an inquiry about their transaction, the transaction can look up the transaction and use this API to ETL data out.
-
-All transactions flowing into the system from both directions (from the merchant and from the bank) will be saved into a CouchDB database. This includes both the request and response for the payment APIs.
-
-#### Security Scope
-
-Only administrators with permission to read or archive are allowed. This includes Transaction Read and Transaction Archive.
-
-#### API
-To access the Transaction History API, see [Transaction History API](https://developer.ibm.com/api/view/id-3591:title-Transaction_History:token-28db8d2aed34570ff8774532c32565ee#doc).
-
-### Securing Endpoints
+#### Securing Endpoints
 Securing the endpoints for {{site.data.keyword.iobp_short}} involves securing the external facing endpoints as well as how the Platform interacts with the compliant Banks. {{site.data.keyword.iobp_short}} provides the OAuth2.0 authorization server to protect and secure all the endpoints on the resource server(s) between itself and the caller of its APIs.
 
 For payment interactions between {{site.data.keyword.iobp_short}} and the Bank, {{site.data.keyword.iobp_short}} follows the protocol set forth by the Bank. In the case of the OBIE Sandboxes, it uses a profile of OAuth 2.0 named OpenID.
@@ -106,16 +94,16 @@ During the onboarding process, {{site.data.keyword.iobp_short}} receives Client 
 
 A Bank will also receive Client ID & Client Secret from {{site.data.keyword.iobp_short}} (similar to a Merchant) to make Onboarding API calls.
 
-#### Access Token Lifetime
+##### Access Token Lifetime
 The default will be 60 seconds.
 
-#### Scope
+##### Scope
 A Bank will be limited to onboarding-read and onboarding-write scopes.
 
 * Onboarding-read grants access to the read APIs for the Bank Onboarding details.
 * Onboarding-write grants access to the write APIs for the Bank Onboarding details.
 
-### Technology Stack
+#### Technology Stack
 The technologies used in the {{site.data.keyword.iobp_short}} solution are built upon Kubernetes and Docker stack with additional Open Source Software (OSS) required to support the open banking architecture. The stack was chosen to follow cloud, micro-services, container, and open-source design principles. 
 
 Foundation Layer (Open Source):
