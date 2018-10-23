@@ -21,7 +21,7 @@ Error occured while retrieving the merchant redirect\_uri during payment submiss
 
 Create a support ticket to check the redirect_\uri correctness in the database, indicating details of the error such as http status code, error message and transactionId.
  
-## IOBP-E-002: PaymentsService(createPaymentSubmission) payment submission failed. ERROR <pre>`<error>`, `<transactionId>`. 
+## IOBP-E-002: PaymentsService(createPaymentSubmission) payment submission failed. ERROR: `<error>`, `<transactionId>`. 
 
 Error occured while processing the payment submission request - payment submission failed. ERROR: `<error>`, `<transactionId>` .
 
