@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-23"
+lastupdated: "2018-11-05"
 
 ---
 
@@ -31,7 +31,7 @@ PaymentsService(createPaymentSubmission) payment submission failed. ERROR: `<err
 
 ### Description
 
-Error occured while processing the payment submission request - payment submission failed. ERROR: `<error>`, `<transactionId>` .
+Error occured while processing the payment submission request - payment submission failed. ERROR: `<error>`, `<transactionId>`.
 
 ### Resolution
 
@@ -151,7 +151,7 @@ Create a support ticket to check the merchants database, indicating details of t
 
 ### Description
 
-Error occured in the database during merchantsGetById operation [MERCHANTS] (merchantsGetById) nano error
+Error occured in the database during merchantsGetById operation [MERCHANTS] (merchantsGetById) nano error.
 
 ### Resolution
 
@@ -199,7 +199,7 @@ CouchDbManager.getBankURL Error: No target URL found for messageType=`<messageTy
 
 ### Description
 
-Error occured because there in no bank URL defined in the database for the given message type: `<messageType>`
+Error occured because there in no bank URL defined in the database for the given message type: `<messageType>`.
 
 ### Resolution
 
@@ -419,7 +419,7 @@ Error occured during message validation because the messagetype is null/empty.
 
 ### Resolution
 
-Retry the request with a valid  messagetype.
+Retry the request with a valid messagetype.
 
 ## IOBP-E-035
 
@@ -523,7 +523,7 @@ Failed while getting banks by name:`<bankName>`
 
 ### Description
 
-Error occured because the operation Failed while getting banks by name:`<bankName>`
+Error occured because the operation Failed while getting banks by name:`<bankName>`.
 
 ### Resolution
 

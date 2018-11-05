@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018
-lastupdated: "2018-10-23"
+lastupdated: "2018-11-05"
 
 ---
 
@@ -181,7 +181,7 @@ Payment init started, `<transactionId>`
 
 ### Description
 
-Indicates the request processing got payment init started, assigned with `<transactionId>`
+Indicates the request processing got payment init started, assigned with `<transactionId>`.
 
 ## IOBP-D-022
 
@@ -266,6 +266,8 @@ Parsing the http headers to send it as part of the http request to the bank.
 ## IOBP-D-032
 
 PSD2BankMessageHandler.sendMessage(), response received from the bank
+
+### Description
 
 Indicates that a n http response is received from the bank.
 
