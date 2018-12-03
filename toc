@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="open-banking-platform" audience="service" href="/docs/services/open-banking-platform/index.html"}
+{: .toc subcollection="open-banking-platform" audience="service" href="/docs/services/open-banking-platform/index.html" path="services/open-banking-platform"}
 Open Banking Platform
 
     {: .navgroup id="learn"}
