@@ -19,19 +19,19 @@ lastupdated: "2018-11-05"
 
 ### Description
 
-Error occured while retrieving the merchant redirect\_uri during payment submission - unable to return to merchant page, error: `<error>`, `<transactionId>`.
+Error occurred while retrieving the merchant redirect\_uri during payment submission - unable to return to merchant page, error: `<error>`, `<transactionId>`.
 
 ### Resolution
 
 Create a support ticket to check the redirect_\uri correctness in the database, indicating details of the error such as http status code, error message and transactionId.
- 
+
 ## IOBP-E-002
 
-PaymentsService(createPaymentSubmission) payment submission failed. ERROR: `<error>`, `<transactionId>` 
+PaymentsService(createPaymentSubmission) payment submission failed. ERROR: `<error>`, `<transactionId>`
 
 ### Description
 
-Error occured while processing the payment submission request - payment submission failed. ERROR: `<error>`, `<transactionId>`.
+Error occurred while processing the payment submission request - payment submission failed. ERROR: `<error>`, `<transactionId>`.
 
 ### Resolution
 
@@ -39,11 +39,11 @@ Create a support ticket, indicating details of the error such as http status cod
 
 ## IOBP-E-003
 
-=====> Error `<errorMsg>`, `<transactionId>` 
+=====> Error `<errorMsg>`, `<transactionId>`
 
 ### Description
 
-Error occured with the error messsage for the transactionId specified: `<errorMsg>`, `<transactionId>`.
+Error occurred with the error messsage for the transactionId specified: `<errorMsg>`, `<transactionId>`.
 
 ### Resolution
 
@@ -51,11 +51,11 @@ Create a support ticket, indicating details of the error such as http status cod
 
 ## IOBP-E-004
 
-Object error being returned. Should be string 
+Object error being returned. Should be string
 
 ### Description
 
-Error occured while processing a payment request - Object error being returned. Should be string.
+Error occurred while processing a payment request - Object error being returned. Should be string.
 
 ### Resolution
 
@@ -79,7 +79,7 @@ Error during getBanks
 
 ### Description
 
-Error occured during getBanks operation to get the list of banks from the database.
+Error occurred during getBanks operation to get the list of banks from the database.
 
 ### Resolution
 
@@ -91,7 +91,7 @@ Unsupported query parameter
 
 ### Description
 
-Error occured while processing the request - unsupported query parameter.
+Error occurred while processing the request - unsupported query parameter.
 
 ### Resolution
 
@@ -99,11 +99,11 @@ Check the request and its query parameters against the swagger and re-send the r
 
 ## IOBP-E-008
 
-[BANKS] (banksGet) nano error 
+[BANKS] (banksGet) nano error
 
 ### Description
 
-Error occured in the database during banksGet operation [BANKS] (banksGet) nano error.
+Error occurred in the database during banksGet operation [BANKS] (banksGet) nano error.
 
 ### Resolution
 
@@ -111,11 +111,11 @@ Create a support ticket to check the banks database, indicating details of the e
 
 ## IOBP-E-009
 
-[BANKS] (bankGetById) nano error 
+[BANKS] (bankGetById) nano error
 
 ### Description
 
-Error occured in the database during bankGetById operation [BANKS] (bankGetById) nano error.
+Error occurred in the database during bankGetById operation [BANKS] (bankGetById) nano error.
 
 ### Resolution
 
@@ -127,7 +127,7 @@ Create a support ticket to check the banks database, indicating details of the e
 
 ### Description
 
-Error occured in the database during banksGetByName operation [BANKS] (banksGetByName) nano error.
+Error occurred in the database during banksGetByName operation [BANKS] (banksGetByName) nano error.
 
 ### Resolution
 
@@ -139,7 +139,7 @@ Create a support ticket to check the banks database, indicating details of the e
 
 ### Description
 
-Error occured in the database during merchantsGet operation [MERCHANTS] (merchantsGet) nano error.
+Error occurred in the database during merchantsGet operation [MERCHANTS] (merchantsGet) nano error.
 
 ### Resolution
 
@@ -151,11 +151,11 @@ Create a support ticket to check the merchants database, indicating details of t
 
 ### Description
 
-Error occured in the database during merchantsGetById operation [MERCHANTS] (merchantsGetById) nano error.
+Error occurred in the database during merchantsGetById operation [MERCHANTS] (merchantsGetById) nano error.
 
 ### Resolution
 
-Create a support ticket to check the merchants database, indicating details of the error such as http status code, error message and transactionId. 
+Create a support ticket to check the merchants database, indicating details of the error such as http status code, error message and transactionId.
 
 ## IOBP-E-013
 
@@ -163,7 +163,7 @@ Create a support ticket to check the merchants database, indicating details of t
 
 ### Description
 
-Error occured in the database during merchantsGetByName operation [MERCHANTS] (merchantsGetByName) nano error.
+Error occurred in the database during merchantsGetByName operation [MERCHANTS] (merchantsGetByName) nano error.
 
 ### Resolution
 
@@ -175,7 +175,7 @@ merchantId cannot be updated
 
 ### Description
 
-Error occured while trying to update the merchant information in the database - merchantId cannot be updated.
+Error occurred while trying to update the merchant information in the database - merchantId cannot be updated.
 
 ### Resolution
 
@@ -187,7 +187,7 @@ CouchDbManager.getBankInfo Error: Failed to find Bank for X-Fapi-Financial-Id[ `
 
 ### Description
 
-Error occured while trying to fetch the bank information from the `<db>` database given x-fapi-financial-id `<fapiId>` due to one of the following reasons 1. A db error occured during this operation or 2. The bank information matching the x-fapi-financial-id `<fapiId>` does not exist.
+Error occurred while trying to fetch the bank information from the `<db>` database given x-fapi-financial-id `<fapiId>` due to one of the following reasons 1. A db error occurred during this operation or 2. The bank information matching the x-fapi-financial-id `<fapiId>` does not exist.
 
 ### Resolution
 
@@ -199,7 +199,7 @@ CouchDbManager.getBankURL Error: No target URL found for messageType=`<messageTy
 
 ### Description
 
-Error occured because there in no bank URL defined in the database for the given message type: `<messageType>`.
+Error occurred because there in no bank URL defined in the database for the given message type: `<messageType>`.
 
 ### Resolution
 
@@ -211,19 +211,19 @@ ICouchDbManager.putBankResponse.dbClient.find Error: Failed to find transaction 
 
 ### Description
 
-Error occured while trying to fetch the transaction record from the `<db>` database given transactionId `<transactionId>` due to one of the following reasons: 1. A db error occured during this operation or 2. The transaction record matching the transactionId `<transactionId>` does not exist.
+Error occurred while trying to fetch the transaction record from the `<db>` database given transactionId `<transactionId>` due to one of the following reasons: 1. A db error occurred during this operation or 2. The transaction record matching the transactionId `<transactionId>` does not exist.
 
-### Resolution 
+### Resolution
 
 Create a support ticket to check the transactions database to check if the transaction exists, indicating details of the error such as http status code, error message and transactionId.
 
 ## IOBP-E-018
 
-CouchDbManager.putBankResponse.dbClient.update Error: Failed to update transaction for transactionId[`<transactionId>`]; Updated BankResponse: `<bankResponse>` 
+CouchDbManager.putBankResponse.dbClient.update Error: Failed to update transaction for transactionId[`<transactionId>`]; Updated BankResponse: `<bankResponse>`
 
 ### Description
 
-Error occured while trying to execute the update operation for the transaction record found matching the transactionId `<transactionId>` in the transaction database.
+Error occurred while trying to execute the update operation for the transaction record found matching the transactionId `<transactionId>` in the transaction database.
 
 ### Resolution
 
@@ -231,11 +231,11 @@ Create a support ticket to check the database connection status and availability
 
 ## IOBP-E-019
 
-CouchDbManager.putBankResponse Error: Failed to update bank response couchdb for transactionId[`<transactionId>`] 
+CouchDbManager.putBankResponse Error: Failed to update bank response couchdb for transactionId[`<transactionId>`]
 
 ### Description
 
-Error occured during the process of retrieving and updating the transaction record for the given transactionId <transactionId> in the transactions database.
+Error occurred during the process of retrieving and updating the transaction record for the given transactionId <transactionId> in the transactions database.
 
 ### Resolution
 
@@ -243,11 +243,11 @@ Create a support ticket to check the database connection status and availability
 
 ## IOBP-E-020
 
-HttpClientErrorException in PSD2BankMessageHandler.sendMessage: status `<status>` calling `<httpMethod>` `<urlValue>`" 
+HttpClientErrorException in PSD2BankMessageHandler.sendMessage: status `<status>` calling `<httpMethod>` `<urlValue>`"
 
 ### Description
 
-Error occured when a HTTP request is sent to the bank and received a HTTP 4XX.
+Error occurred when a HTTP request is sent to the bank and received a HTTP 4XX.
 
 ### Resolution
 
@@ -255,11 +255,11 @@ Validate the HTTP request format and create a support ticket to learn about the 
 
 ## IOBP-E-021
 
-RestClientException: calling `<httpMethod.name()`> `<urlValue>` 
+RestClientException: calling `<httpMethod.name()`> `<urlValue>`
 
 ### Description
 
-Error occured when sending a HTTP rquest to the bank and HTTP client errors occur.
+Error occurred when sending a HTTP rquest to the bank and HTTP client errors occur.
 
 ### Resolution
 
@@ -267,11 +267,11 @@ Validate the HTTP request format and create a support ticket to learn about the 
 
 ## IOBP-E-022
 
-Exception: calling `<httpMethod.name()`> `<urlValue>` 
+Exception: calling `<httpMethod.name()`> `<urlValue>`
 
 ### Description
 
-Error occured while trying to send a HTTP request to the bank.
+Error occurred while trying to send a HTTP request to the bank.
 
 ### Resolution
 
@@ -283,7 +283,7 @@ Unsupported message type requested
 
 ### Description
 
-Error occured while fetching the http method for the given message type because the message type is not supported.
+Error occurred while fetching the http method for the given message type because the message type is not supported.
 
 ### Resolution
 
@@ -291,11 +291,11 @@ Verify the HTTP request contains one of the supported message types and retry th
 
 ## IOBP-E-024
 
-Init Status / Submit Status returned 404 
+Init Status / Submit Status returned 404
 
 ### Description
 
-Error occured suring the Init Status / Submit Status - returned 404.
+Error occurred suring the Init Status / Submit Status - returned 404.
 
 ### Resolution
 
@@ -315,11 +315,11 @@ Retry the request with the correct format for the HTTP request by validating it 
 
 ## IOBP-E-026
 
-Failed to connect to RabbitMQ 
+Failed to connect to RabbitMQ
 
 ### Description
 
-Error occured because failed to connect to RabbitMQ.
+Error occurred because failed to connect to RabbitMQ.
 
 ### Resolution
 
@@ -331,7 +331,7 @@ Failed to open a channel
 
 ### Description
 
-Error occured because it failed to open a channel.
+Error occurred because it failed to open a channel.
 
 ### Resolution
 
@@ -363,7 +363,7 @@ Create a support ticket to check the status of the rabbitmq indicating details o
 
 ## IOBP-E-030
 
-Failed to register a consumer 
+Failed to register a consumer
 
 ### Description
 
@@ -375,7 +375,7 @@ Create a support ticket to check the status of the rabbitmq indicating details o
 
 ## IOBP-E-031
 
-Failed to publish a message 
+Failed to publish a message
 
 ### Description
 
@@ -399,11 +399,11 @@ Create a support ticket to check the status of the http request. It is failing a
 
 ## IOBP-E-033
 
-The transactionId is required but is null/empty 
+The transactionId is required but is null/empty
 
 ### Description
 
-Error occured during message validation because the transaction Id is null/empty.
+Error occurred during message validation because the transaction Id is null/empty.
 
 ### Resolution
 
@@ -415,7 +415,7 @@ The messagetype is null/empty
 
 ### Description
 
-Error occured during message validation because the messagetype is null/empty.
+Error occurred during message validation because the messagetype is null/empty.
 
 ### Resolution
 
@@ -427,7 +427,7 @@ The bankid is null/empty
 
 ### Description
 
-Error occured during message validation because the bankid is null/empty.
+Error occurred during message validation because the bankid is null/empty.
 
 ### Resolution
 
@@ -435,11 +435,11 @@ Retry the request with a valid bankid.
 
 ## IOBP-E-036
 
-The auth code is required - cannot be null/empty 
+The auth code is required - cannot be null/empty
 
 ### Description
 
-Error occured during message validation because the auth code is required - cannot be null/empty.
+Error occurred during message validation because the auth code is required - cannot be null/empty.
 
 ### Resolution
 
@@ -451,7 +451,7 @@ The ignore header is null/empty
 
 ### Description
 
-Error occured during message validation because the ignore header is null/empty.
+Error occurred during message validation because the ignore header is null/empty.
 
 ### Resolution
 
@@ -463,7 +463,7 @@ The Message is marked as Ignored
 
 ### Description
 
-Error occured during message validation because the message is marked as Ignored.
+Error occurred during message validation because the message is marked as Ignored.
 
 ### Resolution
 
@@ -475,7 +475,7 @@ The MessageHeaders is missing, `<missingHeadersList>`
 
 ### Description
 
-Error occured during message validation because the MessageHeaders is missing, `<missingHeadersList>`.
+Error occurred during message validation because the MessageHeaders is missing, `<missingHeadersList>`.
 
 ### Resolution
 
@@ -487,7 +487,7 @@ The MessageHeaders is missing, `<missingHeadersList>`
 
 ### Description
 
-Error occured during message validation because the MessageHeaders is missing, `<missingHeadersList>`.
+Error occurred during message validation because the MessageHeaders is missing, `<missingHeadersList>`.
 
 ### Resolution
 
@@ -495,11 +495,11 @@ Retry the request with all the required message header.
 
 ## IOBP-E-041
 
-Failed while creating banks 
+Failed while creating banks
 
 ### Description
 
-Error occured because the operation failed while creating banks. 
+Error occurred because the operation failed while creating banks.
 
 ### Resolution
 
@@ -511,7 +511,7 @@ Failed while deleting banks for bankId: `<bankId>`
 
 ### Description
 
-Error occured because the operation Failed while deleting banks for bankId: `<bankId>`.
+Error occurred because the operation Failed while deleting banks for bankId: `<bankId>`.
 
 ### Resolution
 
@@ -523,7 +523,7 @@ Failed while getting banks by name:`<bankName>`
 
 ### Description
 
-Error occured because the operation Failed while getting banks by name:`<bankName>`.
+Error occurred because the operation Failed while getting banks by name:`<bankName>`.
 
 ### Resolution
 
@@ -531,11 +531,11 @@ Validate the delete request for correctness of bankName and create a support tic
 
 ## IOBP-E-044
 
-Failed while getting banks 
+Failed while getting banks
 
 ### Description
 
-Error occured because the operation Failed while getting banks.
+Error occurred because the operation Failed while getting banks.
 
 ### Resolution
 
@@ -543,11 +543,11 @@ Validate the get request for correctness and create a support ticket to investig
 
 ## IOBP-E-045
 
-Failed while getting banks by Id:`<bankId>` 
+Failed while getting banks by Id:`<bankId>`
 
 ### Description
 
-Error occured because the operation failed while getting banks by Id:`<bankId>`.
+Error occurred because the operation failed while getting banks by Id:`<bankId>`.
 
 ### Resolution
 
@@ -559,7 +559,7 @@ Failed while updating banks `<bankId>`
 
 ### Description
 
-Error occured because the operation failed while updating banks `<bankId>`.
+Error occurred because the operation failed while updating banks `<bankId>`.
 
 ### Resolution
 
@@ -571,7 +571,7 @@ Failed while creating merchants
 
 ### Description
 
-Error occured because the operation Failed while creating merchants.
+Error occurred because the operation Failed while creating merchants.
 
 ### Resolution
 
@@ -583,7 +583,7 @@ Failed while deleting merchants:`<merchantId>`
 
 ### Description
 
-Error occured because the operation failed while deleting merchants:`<merchantId>`.
+Error occurred because the operation failed while deleting merchants:`<merchantId>`.
 
 ### Resolution
 
@@ -591,11 +591,11 @@ Validate the get request for correctness of merchantId and create a support tick
 
 ## IOBP-E-049
 
-Failed while getting merchants 
+Failed while getting merchants
 
 ### Description
 
-Error occured because the operation failed while getting merchants.
+Error occurred because the operation failed while getting merchants.
 
 ### Resolution
 
@@ -607,7 +607,7 @@ Failed while getting merchants by merchant name:`<merchantName>`
 
 ### Description
 
-Error occured because the operation failed while getting merchants by merchant name:`<merchantName>`.
+Error occurred because the operation failed while getting merchants by merchant name:`<merchantName>`.
 
 ### Resolution
 
@@ -619,7 +619,7 @@ Failed while getting merchants by merchant id:`<merchantName>`
 
 ### Description
 
-Error occured because the operation failed while getting merchants by merchant id:`<merchantName>`.
+Error occurred because the operation failed while getting merchants by merchant id:`<merchantName>`.
 
 ### Resolution
 
@@ -627,11 +627,11 @@ Validate the get request for correctness of merchant Id and create a support tic
 
 ## IOBP-E-052
 
-Failed while updating merchants :`<merchantName>` 
+Failed while updating merchants :`<merchantName>`
 
 ### Description
 
-Error occured because the operation failed while updating merchants :`<merchantName>`
+Error occurred because the operation failed while updating merchants :`<merchantName>`
 
 ### Resolution
 
@@ -643,7 +643,7 @@ Unable to retrieve the bank information
 
 ### Description
 
-Error occured while trying to fetch the bank information from the `<db>` database given x-fapi-financial-id `<fapiId>` due to one of the following reasons: 1. A db occured during this operation or 2. The bank information matching the x-fapi-financial-id `<fapiId>` does not exist.
+Error occurred while trying to fetch the bank information from the `<db>` database given x-fapi-financial-id `<fapiId>` due to one of the following reasons: 1. A db occurred during this operation or 2. The bank information matching the x-fapi-financial-id `<fapiId>` does not exist.
 
 ### Resolution
 
@@ -651,11 +651,11 @@ Create the support ticket to check the db connectivity status and availability w
 
 ## IOBP-E-054
 
-Unable to get the declared constructor of the handler class 
+Unable to get the declared constructor of the handler class
 
 ### Description
 
-Error occured while trying to find the constructor of the bank message handler class.
+Error occurred while trying to find the constructor of the bank message handler class.
 
 ### Resolution
 
@@ -667,7 +667,7 @@ Access denied to the package of the handler class
 
 ### Description
 
-Error occured while loading the bank messsage handler class because the SecurityManager denies access to the package of this class.
+Error occurred while loading the bank messsage handler class because the SecurityManager denies access to the package of this class.
 
 ### Resolution
 
@@ -679,7 +679,7 @@ Unable to instantiate the handler class object
 
 ### Description
 
-Error occured while instantiating the dynamically loaded bank message handler class because it is an abstract class.
+Error occurred while instantiating the dynamically loaded bank message handler class because it is an abstract class.
 
 ### Resolution
 
@@ -691,7 +691,7 @@ Unable to access the handler class object's constructor
 
 ### Description
 
-Error occured while accessing the constructor of the dynamically loaded bank handler class.
+Error occurred while accessing the constructor of the dynamically loaded bank handler class.
 
 ### Resolution
 
@@ -703,7 +703,7 @@ Illegal parameters send to the handler class object
 
 ### Description
 
-Error occured because illegal parameters that do not match the number or type of arguments sent to the bank message handler constructor.
+Error occurred because illegal parameters that do not match the number or type of arguments sent to the bank message handler constructor.
 
 ### Resolution
 
@@ -723,11 +723,11 @@ Create a support ticket to validate the correctness of the handlerClass name in 
 
 ## IOBP-E-060
 
-Invalid handler class 
+Invalid handler class
 
 ### Description
 
-Error occured while trying to dynamically load the bank message handler class for a given invalid (null or empty) handler class name.
+Error occurred while trying to dynamically load the bank message handler class for a given invalid (null or empty) handler class name.
 
 ### Resolution
 
@@ -735,11 +735,11 @@ Create a support ticket to validate the correctness of the handlerClass name in 
 
 ## IOBP-E-061
 
-Exception occured while loading the keystore and SSLContext in SecureSocketsManager.getSSLContext
+Exception occurred while loading the keystore and SSLContext in SecureSocketsManager.getSSLContext
 
 ### Description
 
-Error occured in loading the keystore and creating the SSLContext for the bank identified by the given bankId.
+Error occurred in loading the keystore and creating the SSLContext for the bank identified by the given bankId.
 
 ### Resolution
 
@@ -751,7 +751,7 @@ Invalid Bank Info : x-fapi-financial-id is missing
 
 ### Description
 
-Error occured because invalid bank info is present in the database without x-fapi-financial id.
+Error occurred because invalid bank info is present in the database without x-fapi-financial id.
 
 ### Resolution
 
@@ -759,11 +759,11 @@ Create the support ticket to validate the correctness of the bank info in the da
 
 ## IOBP-E-063
 
-The keystore/passphrase is not defined 
+The keystore/passphrase is not defined
 
 ### Description
 
-Error occured while fetching the keystore/passphrase and it is not defined.
+Error occurred while fetching the keystore/passphrase and it is not defined.
 
 ### Resolution
 
@@ -775,7 +775,7 @@ Message Transformation Failure `<exception>`
 
 ### Description
 
-Error occured while processing the message -  message validation failure occured.
+Error occurred while processing the message -  message validation failure occurred.
 
 ### Resolution
 
@@ -787,7 +787,7 @@ The message is invalid
 
 ### Description
 
-Error occured while processing the message - the message(payload) is invalid.
+Error occurred while processing the message - the message(payload) is invalid.
 
 ### Resolution
 
@@ -795,11 +795,11 @@ Retry the request after validating the correctness of the payload.
 
 ## IOBP-E-066
 
-Unknown payload type 
+Unknown payload type
 
 ### Description
 
-Error occured while processing the message - unknown payload type.
+Error occurred while processing the message - unknown payload type.
 
 ### Resolution
 
@@ -807,11 +807,11 @@ Retry the request after validating the correctness of the payload type.
 
 ## IOBP-E-000P
 
-ERROR_CODE_INVALID_MESSAGE 
+ERROR_CODE_INVALID_MESSAGE
 
 ### Description
 
-Error occured because message is invalid.
+Error occurred because message is invalid.
 
 ### Resolution
 
@@ -823,7 +823,7 @@ ERROR_CODE_INVALID_TRANSACTIONID
 
 ### Description
 
-Error occured because the message has invalid transactionId.
+Error occurred because the message has invalid transactionId.
 
 ### Resolution
 
@@ -831,11 +831,11 @@ Validate the correctness of transactionId and retry the request.
 
 ## IOBP-E-000R
 
-ERROR_CODE_INVALID_MESSAGE_TYPE 
+ERROR_CODE_INVALID_MESSAGE_TYPE
 
 ### Description
 
-Error occured because the message type is invalid.
+Error occurred because the message type is invalid.
 
 ### Resolution
 
@@ -843,11 +843,11 @@ Validate the correctness of message type and retry the request.
 
 ## IOBP-E-000S
 
-ERROR_CODE_INVALID_BANKID 
+ERROR_CODE_INVALID_BANKID
 
 ### Description
 
-Error occured because the bank id is invalid.
+Error occurred because the bank id is invalid.
 
 ### Resolution
 
@@ -855,11 +855,11 @@ Validate the correctness of bankId and retry the request.
 
 ## IOBP-E-000T
 
-ERROR_CODE_IGNORE_SET 
+ERROR_CODE_IGNORE_SET
 
 ### Description
 
-Error occured because the message has ignore header set.
+Error occurred because the message has ignore header set.
 
 ### Resolution
 
@@ -871,7 +871,7 @@ ERROR_CODE_INVALID_PAYLOAD_TYPE
 
 ### Description
 
-Error occured becuase the payload type is invalid.
+Error occurred becuase the payload type is invalid.
 
 ### Resolution
 
@@ -883,7 +883,7 @@ ERROR_CODE_INVALID_MESSAGE_HEADERS
 
 ### Description
 
-Error occured because the message headers are invalid.
+Error occurred because the message headers are invalid.
 
 ### Resolution
 
@@ -895,7 +895,7 @@ ERROR_CODE_BACKEND_EXCEPTION
 
 ### Description
 
-Error occured during message processing in the backend and a bankend exception is thrown.
+Error occurred during message processing in the backend and a bankend exception is thrown.
 
 ### Resolution
 
@@ -907,7 +907,7 @@ ERROR_CODE_INVALID_AUTHCODE
 
 ### Description
 
-Error occured because the auth code is invalid.
+Error occurred because the auth code is invalid.
 
 ### Resolution
 
